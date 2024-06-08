@@ -31,33 +31,93 @@ Welcome to Assistants Hub, where you can **Build, Integrate, and Deploy AI Assis
 
 ![Landing](./docs/landing.png)
 
+## Why should you use Assistants Hub?
+
+Assistants Hub is not another LLM user interface, it is a comprehensive platform that enables businesses and AI practitioners to build, integrate, and deploy AI assistants to their end users with ease. Here are some reasons why you should consider using Assistants Hub:
+
+- **Rapid Build and Rollout**: Quickly create and deploy your AI assistants with our intuitive setup and detailed documentation.
+- **Comprehensive Platform**: Utilize advanced analytics, conversation history tracking, and extensive customization options to tailor your assistant to your needs.
+- **Extensive Collection of Models**: Access a wide variety of AI models to power your assistants, ensuring the best fit for your specific use case.
+
 ## Key Features
 
-- **Rapid Development**: Jumpstart your AI assistant project with our easy-to-follow setup and comprehensive documentation.
-- **Seamless Integration**: Connect your assistant with a wide array of APIs and services to enhance its functionality and intelligence.
-- **Community-Powered**: Tap into the collective knowledge of a vibrant community dedicated to pushing the boundaries of AI assistants.
+- **Extensive LLM and GPT models**: Access the latest AI models from OpenAI, Google, Anthropic and Groq to power your AI assistants.
+- **Streaming Responses**: Enable real-time interactions with your AI assistant through streaming responses.
+- **Analytics**: Monitor and analyze your assistant's performance with detailed analytics and insights.
+- **Conversation Log**: Review and analyze past conversations to improve your assistant's responses.
+- **Customizations**: Tailor your assistant's appearance, behavior, and responses to suit your needs.
+- **Easy Integration**: Seamlessly integrate your assistant with popular platforms and services.
+- **Document Management**: Organize and manage your assistant's documents for quick reference and retrieval.
+- **Function Integration**: Extend your assistant's capabilities by integrating custom functions and services.
 
 Explore our [Guides](https://docs.assistantshub.ai/docs/category/guides) to get started with Assistants Hub or check out our [Demos](https://docs.assistantshub.ai/docs/category/demos) to see our AI assistants in action.
 
-Below are some exciting AI assistant demos generated with Assistants Hub you can play with:
+Below is an AI assistant demo generated with Assistants Hub available at [Math Whiz Kid](https://docs.assistantshub.ai/docs/demos/math-tutor)
 
-- [Blimey! British Slang](https://docs.assistantshub.ai/docs/demos/british-slang-generator)
-- [Math Whiz Kid](https://docs.assistantshub.ai/docs/demos/math-tutor)
-- [Customer Support Agent](https://docs.assistantshub.ai/docs/demos/customer-support-agent)
-- [Creative Recipe Suggestions](https://docs.assistantshub.ai/docs/demos/creative-recipe-suggestions)
-
-![British Slang](./docs/math-tutor.gif)
-
+<div style="text-align: center;">
+  <img src="./docs/math-whiz-kid.gif" alt="Math Whiz Kid" width="380px"/>
 </div>
+
+## Supported Models
+
+### OpenAI Models
+
+All models that support [OpenAI's Assistants API](https://platform.openai.com/docs/models/overview) are supported by [Assistants Hub](https://assistantshub.ai).
+
+| Model Name         | Provider | Streaming <br/>Responses | Documents                | Functions                |
+| ------------------ | -------- | ------------------------ | ------------------------ | ------------------------ |
+| GPT-4o             | OpenAI   | :white_check_mark:       | :white_check_mark:       | :construction:           |
+| GPT-4-Turbo        | OpenAI   | :white_check_mark:       | :white_check_mark:       | :construction:           |
+| GPT-4              | OpenAI   | :white_check_mark:       | :white_check_mark:       | :construction:           |
+| GPT-3.5-Turbo      | OpenAI   | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| GPT-3.5-Turbo-16k  | OpenAI   | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| GPT-3.5-Turbo-0125 | OpenAI   | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+
+### Google Gemini Models
+
+The gemini-1.5-pro-latest model is a large-scale language model developed by Google. It is designed to generate human-like text based on the input provided to it. The model is trained on a diverse range of text data to ensure that it can handle a wide variety of tasks and topics. [Read More](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note)
+
+| Model Name              | Provider | Streaming <br/>Responses | Documents                | Functions                |
+| ----------------------- | -------- | ------------------------ | ------------------------ | ------------------------ |
+| Gemini-1.5-Pro-latest   | Google   | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Gemini-1.5-Flash-latest | Google   | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+
+### Anthropic Models
+
+All models that support [Anthropic API](https://docs.anthropic.com/en/docs/models-overview) are supported by [Assistants Hub](https://assistantshub.ai).
+
+| Model Name      | Provider  | Streaming <br/>Responses | Documents                | Functions                |
+|-----------------|-----------| ------------------------ | ------------------------ | ------------------------ |
+| Claude 3 Opus   | Anthropic | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Claude 3 Sonnet | Anthropic | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Claude 3 Haiku  | Anthropic | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+
+### Gorq Cloud
+
+All models that support [Gorq Cloud API](https://console.groq.com/docs/models) are supported by [Assistants Hub](https://assistantshub.ai).
+
+| Model Name         | Provider | Streaming <br/>Responses | Documents                | Functions                |
+| ------------------ | -------- | ------------------------ | ------------------------ | ------------------------ |
+| Llama3-8b-8192     | Groq     | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Llama3-70b-8192    | Groq     | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Mixtral-8x7b-32768 | Groq     | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Gemma-7b-it-8192   | Groq     | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
 
 ## Getting Started
 
 To get started with Assistants Hub, you'll need to have Node.js installed on your machine. Follow the steps below to set up your development environment.
 
+```bash
+git clone https://github.com/assistants-hub/assistantshub.ai
+cd assistantshub.ai
+pnpm install
+```
+
 ### Prerequisites
 
 - Node.js (LTS version recommended)
 - pnpm
+- PostgreSQL database
 
 ### Installation
 
@@ -97,8 +157,7 @@ To get started with Assistants Hub, you'll need to have Node.js installed on you
 Visit http://localhost:3001 in your browser to see your AI assistant in action.
 
 7. Logging into your local instance.
-   - By default the local instance is configured to use Credentials based authentication.
-   - You can login using CREDENTIALS_APPROVED_USERNAME and CREDENTIALS_APPROVED_PASSWORD in your .env file.
+   - You can configure Auth0 by creating a temporary tenant and following instructions mentioned in [Auth0 Next.js Documentation](https://auth0.com/docs/quickstart/webapp/nextjs/01-login)
 
 ## Contributing
 
@@ -112,39 +171,9 @@ Encountered a bug or need help? Open an issue in our GitHub repository, and we'l
 
 Assistants Hub is released under the [MIT license](./LICENSE), promoting open and collaborative development.
 
-## Legal Disclaimer
+## Disclaimers
 
-Assistants Hub incorporates artificial intelligence (AI) features powered by technologies from Google LLC and OpenAI, Inc. These AI tools process inputs you provide to generate outputs and functionalities within this service. By using Assistants Hub, you acknowledge and agree to the following:
-
-### AI Model Limitations
-
-The AI features are based on machine learning models and are not infallible. Outputs generated by AI features can sometimes be inaccurate, inappropriate, or misleading. Users should exercise judgment and discretion when using information provided by AI features.
-
-### Data Use and Privacy
-
-Any data you provide while using the AI features may be processed and stored by Google LLC and OpenAI, Inc., as well as Assistants Hub, in accordance with our Privacy Policy. Please review our Privacy Policy to understand how your data is used and protected.
-
-### Intellectual Property
-
-Outputs generated by AI features may be influenced by the data on which the AI models were trained but do not confer any ownership of underlying AI technology or intellectual property rights. All intellectual property rights in the AI technology and its outputs remain with their respective owners (Google LLC, OpenAI, Inc., or their affiliates).
-
-### No Warranty
-
-Assistants Hub provides AI features "as is" and without warranty of any kind, either express or implied. We do not guarantee the availability, accuracy, completeness, reliability, or timeliness of the AI features provided.
-
-### Limitation of Liability
-
-To the fullest extent permitted by law, neither Assistants Hub, nor Google LLC, nor OpenAI, Inc., nor any of their affiliates shall be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the AI features.
-
-### Changes and Updates
-
-Assistants Hub reserves the right to modify or discontinue AI features at any time without notice. We recommend checking this disclaimer periodically for any changes.
-
-### Affiliation and Branding
-
-Assistants Hub is an independent entity and is not affiliated with Google LLC, OpenAI, Inc., or any of their subsidiaries or affiliates. The names Google and OpenAI, and all related logos, products, and service names are trademarks of their respective owners or their affiliates. These names and marks are used herein solely for identification purposes. No sponsorship or endorsement by Google LLC, OpenAI, Inc., or any of their affiliates is intended or implied.
-
-By continuing to use Assistants Hub, you agree to these terms. If you do not agree with any part of this disclaimer, please do not use the AI features offered by this service.
+Please review our [DISCLAIMER.md](./DISCLAIMER.md) to understand the limitations and legal disclaimers associated with using Assistants Hub.
 
 ## References
 
@@ -155,7 +184,7 @@ By continuing to use Assistants Hub, you agree to these terms. If you do not agr
 
 We extend our gratitude to:
 
-OpenAI and Google for their exceptional APIs that powers the intelligence of our assistants.
+OpenAI, Anthropic, Groq and Google for their exceptional APIs that powers the intelligence of our assistants.
 The Next.js community, for providing the robust framework that makes this project possible.
 
 Thank you for exploring Assistants Hub. We're eager to see the incredible AI assistants you'll build and deploy!
